@@ -10,6 +10,13 @@
 .display-flex{
     display: flex;
 }
+.primary-btn{
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
 
 
 /* ------------- Nav-Bar ------------- */
@@ -26,6 +33,9 @@ header{
     font-size: 20px;
     font-weight: 600;
 }
+.nav-btn{
+    background-color: orange;
+}
 /* Manu color */
 .home{
     color: orange;
@@ -39,26 +49,105 @@ header{
 .admission{
     color: hotpink;
 }
-.nav-button{
-    height: 50px;
-    width: 120px;
-    background-color: orange;
-    font-size: 1rem;
-    color: white;
-    border: none;
-    border-radius: 10px;
-}
+
 /* option menu image */
 .menu{
     height: 50px;
     width: 50px;
     display: none;
 }
+/* --------Hero Section------------ */
+.hero-title{
+    font-size: 56px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+.h-t-orange{
+    color: orange;
+}
+.h-t-black{
+    color: black;
+}
+.h-t-skyblue{
+    color: skyblue;
+}
+.enroll-btn{
+    background-color: black;
+}
+.hero-child{
+    width: 100%;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+/* ---------------- Main Section Styles----------------- */
+/* standard curriculam */
+.standard-curriculam{
+    margin: 0 auto;
+}
+.standard-curriculam{
+    background-image: url(./assets/bg.png);
+}
+.carriculam-title{
+    font-size: 3rem;
+    text-align: center;
+}
+.cards-container{
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.card-one{
+    background-image: linear-gradient(#a1def7, white);
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+}
+.card-two{
+    background-image: linear-gradient(#f7bf58, white);
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+}
+.card-three{
+    background-image: linear-gradient(#7fa9f7, white);
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+}
+.read-1{
+    color: #a1def7;
+}
+.read-2{
+    color: #f7bf58;
+}
+.read-3{
+    color: #7fa9f7;
+}
 
 
+/* arrow simble */
+.arrow-sign{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    gap: 20px;
+}
+.right-arrow{
+    height: 50px;
+    width: 50px;
 
-
-
+}
+.left-arrow{
+    transform: rotate(180deg);
+    height: 50px;
+    width: 50px;
+}
 
 
 
@@ -75,12 +164,21 @@ header{
 
 
 @media  screen and (max-width: 576px) {
-    .nav-button, .nav-manu-container, .head-title{
+    .nav-btn, .nav-manu-container, .head-title{
         visibility: hidden;
     }
     .menu{
         display: block;
     }
     
-    
+    /* nav-hero-section */
+    .hero-container{
+        flex-direction: column-reverse;
+    }
+    .cards-container{
+        flex-direction: column;
+        align-content: center;
+        margin: 20px;
+    }
+
 }
