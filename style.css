@@ -218,7 +218,8 @@ header{
 .view-btn{
     background-color: black;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 90px;
+    margin-bottom: 80px;
     height: 50px;
     width: 120px;
 }
@@ -227,23 +228,25 @@ header{
     justify-content: center;
 }
 
+/* footer section */
+.footer{
+    background-color: #7fa9f7;
+}
+
+.footer-container{
+    justify-content: space-evenly;
+    padding: 80px;
+}
+.social-img{
+    gap: 20px;
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* ----------- Responsive Section ------------ */
 @media  screen and (max-width: 576px) {
     .nav-btn, .nav-manu-container, .head-title{
         visibility: hidden;
@@ -268,6 +271,9 @@ header{
         flex-direction: column;
         margin: 0;
         gap: 0;
+    }
+    .footer-container{
+        flex-direction: column;
     }
 
 }
